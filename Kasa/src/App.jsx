@@ -3,7 +3,8 @@ import Card from './components/Card'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import Logo from './components/Logo'
+import Navbar from './components/Navbar'
 function App() {
   const [count, setCount] = useState(0)
 const logements = [{
@@ -100,7 +101,7 @@ const logements = [{
 }] 
   return (
     <>
-    
+  
     {logements.map(element=><Card element={element}></Card>)}
       <div>
         <a href="https://vitejs.dev" target="_blank">
