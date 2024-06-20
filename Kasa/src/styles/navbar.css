@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    gap:20px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34.22px;
+    text-align: right;
+
+}
+
+.logo-container img{
+    width: 210.32px;
+    height: 68px;
+}

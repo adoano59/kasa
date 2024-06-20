@@ -1,0 +1,19 @@
+.footer{
+    background-color: black;
+    width: 1440px;
+    height: 209px;
+    padding: 66px 464px 29px 463px;
+    gap: 0px;
+    opacity: 0px;
+
+
+}
+.footer-text{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34.22px;
+    text-align: center;
+    color: #FFFFFF;
+
+}

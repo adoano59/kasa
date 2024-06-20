@@ -1,5 +1,6 @@
 import React from 'react'
-import logoImage from '../../image/logo.png' 
+import logoImage from '../../image/logo.png'
+import "../styles/navbar.css" 
 
 function Logo() {
   return (

@@ -4,15 +4,21 @@ import {
   createBrowserRouter,
   RouterProvider,Outlet
 } from "react-router-dom";
-import "./index.css";
+import "./styles/index.css";
 import App from "./App";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
 import Logo from "./components/Logo";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 const Layout = () => (
-  <>
-    <Logo /><Navbar />
-    <Outlet />
+  <><div>
+   <div className="BarHeader"><Logo /><Navbar />
+   </div> 
+   <Banner />
+   </div>
+   <Outlet />
+   <Footer />
   </>
 );
 
