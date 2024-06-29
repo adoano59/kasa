@@ -1,0 +1,143 @@
+.cardFiche{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.imgFiche{
+    width: 100%;
+    display: block;
+}
+.btnCarosselRight, .btnCarosselLeft{
+    position: absolute;
+    top: 34%;
+    border: none;
+    background-color: transparent;
+    width: 96px;
+    height: 119.64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1; /* S'assurer que les boutons sont au-dessus de l'image */
+    color: white;
+    
+}
+.btnCarosselRight:active, .btnCarosselLeft:active {
+    border-color: transparent; /* Supprimer la bordure au clic */
+    outline-color: transparent; /* Supprimer l'effet de focus au clic */
+}
+
+.btnCarosselRight {
+    right: 100px; 
+}
+
+.btnCarosselLeft {
+    left: 100px; 
+}
+.chevronCarossel{
+    width: 46.68px;
+    height: 79.2px;
+    top: 8.4px;
+    left: 23.36px; 
+}
+.ficheTitle, .ficheDetails{
+    display: flex;
+    gap: 100px;
+    width:98%;
+    
+}
+.ficheTitle{
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.titleHome{
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    text-align: left;
+    color: #FF6060;
+    
+}
+.locationHome{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    text-align: left;
+    color:black;
+    
+}
+.host{
+    display: flex;
+    align-items: center;
+    width: 167px;
+    height: 64px;
+    top: 602px;
+    left: 1170px;
+    gap: 20px;
+    opacity: 0px;
+    justify-content: flex-end;
+    
+}
+.hostName{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    text-align: right;
+    color: #FF6060;
+    
+}
+.hostPhoto img{
+    border-radius: 50%;
+}
+.tag{
+    display: flex;
+    gap:10px;
+}
+.dropdown{
+    width: 45%;
+    margin: auto;
+}
+.chevron {
+    
+    transition: transform 0.3s;
+    font-size: 30px;
+}
+
+.chevron.open {
+    transform: rotate(180deg);
+}
+.dropdown-button{
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.67px;
+    text-align: left;
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;
+    background: #FF6060;
+    color:white;
+}
+.dropdown-content{
+    height:272px;
+    background: #F6F6F673;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.67px;
+    text-align: left;
+}
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}

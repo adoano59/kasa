@@ -9,14 +9,14 @@ import App from "./App";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
 import Logo from "./components/Logo";
-import Banner from "./components/Banner";
+import Fiche from "./pages/Fiche";
 import Footer from "./components/Footer";
+import Error from './components/Error';
 const Layout = () => (
-  <><div>
+  <>
    <div className="BarHeader"><Logo /><Navbar />
    </div> 
-   <Banner />
-   </div>
+   
    <Outlet />
    <Footer />
   </>
@@ -33,7 +33,16 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />
+      },
+      {
+        path: "/logement/:id",
+        element: <Fiche />
+      }, 
+       {
+        path: "*",
+        element: <Error />
       }
+
     ]
   }
 ]);

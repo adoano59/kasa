@@ -1,21 +1,29 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "../styles/navbar.css" 
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import "../styles/navbar.css";
 
 function Navbar() {
   return (
-  
     <nav className="navbar">
-     
-       
-          <Link to="/">Accueil</Link>
-      
-    
-          <Link to="/about">À propos</Link>
-        
-    
+      <NavLink
+        to="/"
+        style={({ isActive }) => ({
+          borderBottom: isActive ? "#000000 solid 2px" : "",   
+        })}
+      >
+        Accueil
+      </NavLink>
+
+      <NavLink
+        to="/about"
+        style={({ isActive }) => ({
+          borderBottom: isActive ? "#000000 solid 2px" : "",   
+        })}
+      >
+        À propos
+      </NavLink>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

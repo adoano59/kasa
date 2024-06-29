@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Card from './components/Card';
 import './styles/app.css';
+import Banner from "./components/Banner";
 
 function App() {
   const [logements, setLogements] = useState([]);
@@ -23,11 +24,15 @@ function App() {
   }, []);
 
   return (
+    <>
+    <Banner image='../image/banniere.jpg' title='Chez vous, partout et ailleurs' />
+    
     <div className="card-container">
       {logements.map((element, index) => (
         <Card key={index} element={element} />
       ))}
     </div>
+    </>
   );
 }
 

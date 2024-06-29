@@ -1,0 +1,18 @@
+.btnTags{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    width: 115px;
+    height: 25px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;
+    background: #FF6060;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.96px;
+    text-align: center;
+    color:#ffffff 
+}
