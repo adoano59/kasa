@@ -3,7 +3,7 @@ import "../styles/error.css"
 function Error(props) {
     
     return (
-        <> 
+        <> <div className='errorContent'>
         <div className="errorNumber">
         404
         </div>
@@ -12,6 +12,7 @@ function Error(props) {
         </div>
         <div className='errorBack'>
         <a href="/">Retourner sur la page d’accueil</a>
+        </div>
         </div>
         </>)
     }

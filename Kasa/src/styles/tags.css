@@ -14,5 +14,6 @@
     font-weight: 700;
     line-height: 19.96px;
     text-align: center;
-    color:#ffffff 
+    color:#ffffff; 
+    white-space: nowrap;
 }

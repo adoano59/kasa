@@ -98,6 +98,10 @@
     display: flex;
     gap:10px;
 }
+.ficheRate{
+    display: flex;
+    justify-content: space-between;
+}
 .dropdown{
     width: 45%;
     margin: auto;

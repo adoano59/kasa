@@ -6,6 +6,7 @@ import Tags from '../components/Tags';
 import Error from '../components/Error';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
+import Rate from '../components/Rate';
 
 
 function Fiche() {
@@ -76,7 +77,7 @@ function Leftcarossel(){
                     ))}
                 </div>
                 <div className='rate'>
-                   
+                   <Rate rating={logement.rating} />
                 </div>
             </div>
             <div className='ficheDetails'>
