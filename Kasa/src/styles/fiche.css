@@ -105,7 +105,7 @@
 }
 .dropdown{
     width: 45%;
-    margin: auto;
+   
 }
 .chevron {
     
@@ -133,7 +133,6 @@
     color:white;
 }
 .dropdown-content{
-    height:272px;
     background: #F6F6F673;
     font-family: Montserrat;
     font-size: 18px;

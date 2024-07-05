@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from "../components/Banner";
 import Collapse from '../components/Collapse';
+import "../styles/about.css";
 
 function About() {
   const aboutList = [
@@ -32,12 +33,9 @@ function About() {
       <Banner image='../image/banniere.jpg' title='' />
       <div className='aboutList-content'>
       {aboutList.map((el, index) => (
-        <div key={index}>
-          <Collapse titleDetails={el.title} details={el.content} />
-          <br />
-          <br />
-        </div>
-        
+      
+          <Collapse key={index} titleDetails={el.title} details={el.content} />
+  
       ))}
       </div>
     </>
