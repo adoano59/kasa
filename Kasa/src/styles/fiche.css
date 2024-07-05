@@ -7,6 +7,7 @@
 }
 .imgFiche{
     width: 100%;
+    height: 650px;
     display: block;
 }
 .btnCarosselRight, .btnCarosselLeft{
@@ -144,4 +145,53 @@
     list-style-type: none;
     padding: 0;
     margin-top: 10px;
+}
+.carossel-content{
+    position: relative;
+}
+@media screen and (max-width: 768px) {
+ 
+    .imgFiche {
+        height: auto;
+    }
+    .banner-title{
+        font-size: 21px;
+        top: -100px;
+        left: 26px;
+    }
+   
+    .btnCarosselRight, .btnCarosselLeft {
+        width: 15%;
+        height: 15%;
+        top: 40%;
+       
+    }
+    .btnCarosselRight{
+        right: 20px;
+    }
+    .btnCarosselLeft{
+        left: 20px;
+    }
+    
+    .chevronCarossel {
+        width: 25px;
+        height: 25px;
+    }
+    .ficheTitle, .ficheDetails {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .titleHome {
+        font-size: 24px;
+    }
+    .locationHome, .hostName, .dropdown-button, .dropdown-content {
+        font-size: 14px;
+    }
+    .host {
+        width: auto;
+    }
+    .tag {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
 }

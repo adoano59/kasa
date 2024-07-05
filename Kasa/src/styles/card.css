@@ -9,10 +9,17 @@
   
   .card-image {
     width: 100%;
-    height: auto;
+    height: 75%;
     display: block;
   }
   
  .card-title{
-    font-size: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.67px;
+  text-align: left;
+  
  }

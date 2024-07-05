@@ -13,3 +13,21 @@
     width: 210.32px;
     height: 68px;
 }
+@media screen and (max-width: 375px) {
+   .logo-container{
+        width: 30%;
+    }
+    .logo-container img{
+        width: 100%;
+    }
+    .bar-header{
+        gap: 100px;
+        align-items: center;
+    
+    }
+    .navbar{
+        gap: 14px;
+        font-size: 13px;
+        flex-wrap: wrap;
+    }
+}

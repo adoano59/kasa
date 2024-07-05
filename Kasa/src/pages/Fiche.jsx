@@ -55,9 +55,11 @@ function Leftcarossel(){
     return (
         <> 
         <div className='cardFiche'>
+            <div className='carossel-content'>
             <img className='imgFiche' src={logement.pictures[carosselId]} alt={logement.title} />
             <button className='btnCarosselLeft' onClick={Leftcarossel}><FontAwesomeIcon className='chevronCarossel' icon={faChevronLeft} /></button>
             <button className='btnCarosselRight' onClick={Rightcarossel}><FontAwesomeIcon className='chevronCarossel' icon={faChevronRight} /></button>
+            </div>
             <div className='ficheTitle'>
                 <div className='titleHome'>
                     {logement.title}
