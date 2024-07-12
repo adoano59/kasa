@@ -5,7 +5,6 @@ import Banner from "./components/Banner";
 
 function App() {
   const [logements, setLogements] = useState([]);
-
   useEffect(() => {
     const fetchLogements = async () => {
       try {
@@ -19,19 +18,18 @@ function App() {
         console.error('Erreur lors de la récupération des données de logements:', error);
       }
     };
-    
+
     fetchLogements();
   }, []);
-
   return (
     <>
-    <Banner image='../image/banniere.jpg' title='Chez vous, partout et ailleurs' />
-    
-    <div className="card-container">
-      {logements.map((element, index) => (
-        <Card key={index} element={element} />
-      ))}
-    </div>
+      <Banner image='../image/banniere.jpg' title='Chez vous, partout et ailleurs' />
+
+      <div className="card-container">
+        {logements.map((element, index) => (
+          <Card key={index} element={element} />
+        ))}
+      </div>
     </>
   );
 }

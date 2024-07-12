@@ -1,3 +1,42 @@
+.cardContent{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+    gap: 30px; /* Espacement entre les éléments */
+}
+.cardContent{
+    position: relative;
+}
+/* Ajoutez des styles spécifiques pour chaque élément si nécessaire */
+.titleHome,.host  {
+    grid-row: 1; /* Première ligne */
+}
+.host{
+    position: absolute;
+    right: 1px;
+    top: 26px;
+    display: flex;
+    align-items: center;
+    width: 167px;
+    height: 64px;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.locationHome {
+    grid-row: 2; /* Deuxième ligne */
+}
+.tag, .rate{
+    grid-row: 3; /* Troisième ligne */
+}
+.rate{
+    position: absolute;
+    right: 1px;
+}
+.ficheDetails1, .ficheDetails2{
+    grid-row: 4; /* Quatrième ligne */
+}
+
 .cardFiche{
     display: flex;
     flex-direction: column;
@@ -71,18 +110,7 @@
     color:black;
     
 }
-.host{
-    display: flex;
-    align-items: center;
-    width: 167px;
-    height: 64px;
-    top: 602px;
-    left: 1170px;
-    gap: 20px;
-    opacity: 0px;
-    justify-content: flex-end;
-    
-}
+
 .hostName{
     font-family: Montserrat;
     font-size: 18px;
@@ -104,7 +132,7 @@
     justify-content: space-between;
 }
 .dropdown{
-    width: 45%;
+    width: 98%;
    
 }
 .chevron {
@@ -148,49 +176,64 @@
 .carossel-content{
     position: relative;
 }
-@media screen and (max-width: 768px) {
- 
-    .imgFiche {
+@media (max-width: 768px) {
+    .imgFiche{
         height: auto;
     }
-    .banner-title{
-        font-size: 21px;
-        top: -100px;
-        left: 26px;
+
+    .titleHome {
+        grid-row: 1; 
     }
-   
-    .btnCarosselRight, .btnCarosselLeft {
-        width: 15%;
-        height: 15%;
-        top: 40%;
-       
+
+    .locationHome {
+        grid-row: 2; 
+        font-size: 14px;
+        line-height: 19.96px;
     }
-    .btnCarosselRight{
-        right: 20px;
+
+    .tag {
+       grid-row: 3;
     }
-    .btnCarosselLeft{
-        left: 20px;
+
+    .rate {
+        font-size: 13px; 
+        grid-row: 4;
+        left: 1px;
+        right: auto;
+    }
+
+    .host {
+        grid-row: 4;
+        top: -19px;
+        gap:5px;
+    
+    }
+
+    .hostName {
+        font-size: 19px; 
+    }
+
+    .hostPhoto img {
+        width: 50px; 
+        height: 50px;
+        border-radius: 50%;
+    }
+    .ficheDetails1{
+        margin-top: 10px;
+        grid-row: 5; 
+        grid-column: 1 / span1;
+    }
+    .ficheDetails2{
+        grid-row: 6;
+        grid-column: 1 / span1;
+    }
+    .btnCarosselRight {
+        right: 0px; 
     }
     
-    .chevronCarossel {
-        width: 25px;
-        height: 25px;
+    .btnCarosselLeft {
+        left: 0px; 
     }
-    .ficheTitle, .ficheDetails {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .titleHome {
-        font-size: 24px;
-    }
-    .locationHome, .hostName, .dropdown-button, .dropdown-content {
-        font-size: 14px;
-    }
-    .host {
-        width: auto;
-    }
-    .tag {
-        flex-wrap: wrap;
-        gap: 5px;
-    }
+
 }
+

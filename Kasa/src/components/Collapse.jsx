@@ -7,7 +7,6 @@ function Dropdown(props) {
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
-
     return (
         <div className="dropdown">
             <div className="dropdown-button" onClick={toggleDropdown}>

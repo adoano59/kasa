@@ -1,13 +1,13 @@
 import React from 'react'
-import "../styles/tags.css" 
+import "../styles/tags.css"
 function Tags(props) {
-    
-  
-    return (
-      <> 
-     
+
+
+  return (
+    <>
+
       <button className='btnTags'>{props.element}</button>
-      
-      </>)
+
+    </>)
 }
 export default Tags

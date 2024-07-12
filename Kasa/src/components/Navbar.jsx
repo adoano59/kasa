@@ -8,7 +8,7 @@ function Navbar() {
       <NavLink
         to="/"
         style={({ isActive }) => ({
-          borderBottom: isActive ? "#000000 solid 2px" : "",   
+          borderBottom: isActive ? "#000000 solid 2px" : "",
         })}
       >
         Accueil
@@ -17,7 +17,7 @@ function Navbar() {
       <NavLink
         to="/about"
         style={({ isActive }) => ({
-          borderBottom: isActive ? "#000000 solid 2px" : "",   
+          borderBottom: isActive ? "#000000 solid 2px" : "",
         })}
       >
         À propos

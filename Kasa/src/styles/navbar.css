@@ -1,6 +1,6 @@
 .navbar {
     display: flex;
-    gap:20px;
+    gap: 20px;
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;
@@ -9,23 +9,27 @@
 
 }
 
-.logo-container img{
+.logo-container img {
     width: 210.32px;
     height: 68px;
 }
-@media screen and (max-width: 375px) {
-   .logo-container{
+
+@media screen and (max-width: 768px) {
+    .logo-container {
         width: 30%;
     }
-    .logo-container img{
+
+    .logo-container img {
         width: 100%;
     }
-    .bar-header{
+
+    .bar-header {
         gap: 100px;
         align-items: center;
-    
+
     }
-    .navbar{
+
+    .navbar {
         gap: 14px;
         font-size: 13px;
         flex-wrap: wrap;

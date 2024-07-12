@@ -9,7 +9,7 @@ const Rate = ({ rating }) => {
 
     for (let i = 1; i <= 5; i++) {
         if (i <= rating) {
-            stars.push(<FontAwesomeIcon key={i} icon={faSolidStar} className='full-star'/>);
+            stars.push(<FontAwesomeIcon key={i} icon={faSolidStar} className='full-star' />);
         } else {
             stars.push(<FontAwesomeIcon key={i} icon={faRegularStar} className='empty-star' />);
         }

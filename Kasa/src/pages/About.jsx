@@ -29,14 +29,14 @@ function About() {
 
   return (
     <>
-    
+
       <Banner image='../image/banniere.jpg' title='' />
       <div className='aboutList-content'>
-      {aboutList.map((el, index) => (
-      
+        {aboutList.map((el, index) => (
+
           <Collapse key={index} titleDetails={el.title} details={el.content} />
-  
-      ))}
+
+        ))}
       </div>
     </>
   );
